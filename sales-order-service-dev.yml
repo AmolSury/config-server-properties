@@ -1,7 +1,10 @@
 server:
     port: 8181
 itemservices:
-    chkname: http://item-service/item-services/get?name=    
+    chkname: http://item-service/item-services/get?name=
+customer:
+    service:
+      getcust= http://localhost:8080/customer-services/get/
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
