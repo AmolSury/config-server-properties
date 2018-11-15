@@ -1,6 +1,8 @@
 server:
    port: 8080
-   
+spring:
+  profiles:
+    active: dev
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
     leaseRenewalIntervalInSeconds: 1
