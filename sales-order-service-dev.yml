@@ -4,7 +4,7 @@ itemservices:
     chkname: http://item-service/item-services/get?name=
 customer:
     service:
-      getcust: http://customer-service/customer-services/get/
+      getcust: http://customerservice/customer-services/get/
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
