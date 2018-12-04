@@ -19,4 +19,20 @@ spring:
 management:
   security:
     enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
+    
 
+#Actuator Property 
+management:
+  endpoints:
+    web:
+        exposure:
+                include:*
+  shutdown:
+    enabled: true
+    
+#For Actuator info
+info:
+    app:
+        name: Spring Sample Application
+    description: This is my first spring boot application
+    version: 1.0.0
