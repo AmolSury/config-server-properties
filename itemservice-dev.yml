@@ -1,35 +1,26 @@
-server:
-  port: 8089
-eureka:         #tells about the Eureka server details and its refresh time
-  instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    healthcheck:
+--- 
+eureka: 
+  client: 
+    healthcheck: 
       enabled: true
-    lease:
+    lease: 
       duration: 5
-
-spring:    
-  application:
-    name: item-service   #current service name to be used by the eureka server
-     
-management:
-  security:
-    enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
-    
-
-#Actuator Property 
-management:
-  endpoints:
-    web:
-        exposure:
-                include: *  
-#For Actuator info
-info:
-  app:
-    name: Spring Sample Application
-    description: This is my first spring boot application
-    version: 1.0.0
+    serviceUrl: 
+      defaultZone: "http://localhost:8761/eureka/"
+  instance: 
+    leaseExpirationDurationInSeconds: 2
+    leaseRenewalIntervalInSeconds: 1
+info: 
+  app: 
+    description: "This is my first spring boot application"
+    name: "Spring Sample Application"
+    version: "1.0.0"
+management: 
+  endpoints: 
+    web: 
+      exposure: "include:*"
+server: 
+  port: 8089
+spring: 
+  application: 
+    name: item-service
