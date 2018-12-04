@@ -26,13 +26,12 @@ management:
   endpoints:
     web:
         exposure:
-                include:*
+                include: *
   shutdown:
-    enabled: true
-    
+    enabled: true   
 #For Actuator info
 info:
-    app:
-        name: Spring Sample Application
+  app:
+    name: Spring Sample Application
     description: This is my first spring boot application
     version: 1.0.0
