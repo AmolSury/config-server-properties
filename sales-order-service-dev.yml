@@ -19,4 +19,26 @@ eureka:
  
 spring:
   application:
-    name: sales-order-service    #service name
+    name: sales-order-service-dev    #service name
+
+#for Ribbon Load Balancing
+server:
+    ribbon:
+        eureka:
+            enabled: true
+        ServerListRefreshInterval: 1000
+        
+#for RabitMQ 
+spring:
+    rabbitmq:
+        host: localhost
+        port: 5672
+        username: guest
+        password: guest
+spring:
+    cloud:
+        stream:
+            bindings:
+                input:
+                    destination: customerRegistrations
+                    group: customerRegistrationQueue
