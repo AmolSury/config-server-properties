@@ -14,8 +14,20 @@ eureka:         #tells about the Eureka server details and its refresh time
 
 spring:    
   application:
-    name: item-service   #current service name to be used by the eureka server
+    name: item-service-dev   #current service name to be used by the eureka server
      
 management:
   security:
     enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
+
+#Actuator End Point
+management:
+  endpoints:
+    web:
+      exposure:
+        include:*
+info:
+  app:
+    name: Spring Sample Application
+    description: This is my first spring boot application
+    version: 1.0.0
