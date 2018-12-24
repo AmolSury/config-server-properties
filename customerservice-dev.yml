@@ -15,8 +15,20 @@ eureka:         #tells about the Eureka server details and its refresh time
 
 spring:    
   application:
-    name: customer-service   #current service name to be used by the eureka server
+    name: customer-service-dev   #current service name to be used by the eureka server
      
 management:
   security:
     enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
+
+#RabbitMQ Properties
+spring:
+   rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+spring.main.allow-bean-definition-overriding: true
+#javainuse.rabbitmq.exchange=javaTechM.exchange
+#javainuse.rabbitmq.queue=javaTechM.queue
+#javainuse.rabbitmq.routingkey=javaTechM.routingkey
