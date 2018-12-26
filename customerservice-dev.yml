@@ -28,7 +28,7 @@ spring:
       port: 5672
       username: guest
       password: guest
-spring.main.allow-bean-definition-overriding: true
+#spring.main.allow-bean-definition-overriding: true
 #javainuse.rabbitmq.exchange=javaTechM.exchange
 #javainuse.rabbitmq.queue=javaTechM.queue
 #javainuse.rabbitmq.routingkey=javaTechM.routingkey
