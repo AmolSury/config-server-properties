@@ -12,10 +12,6 @@ eureka:         #tells about the Eureka server details and its refresh time
       enabled: true
     lease:
       duration: 5
-
-spring:    
-  application:
-    name: customer-service   #current service name to be used by the eureka server
      
 management:
   security:
