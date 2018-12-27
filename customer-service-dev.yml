@@ -23,6 +23,10 @@ spring:
       port: 5672
       username: guest
       password: guest
+      
+#H2 Database UI Enable      
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console      
 #spring.main.allow-bean-definition-overriding: true
 #javainuse.rabbitmq.exchange=javaTechM.exchange
 #javainuse.rabbitmq.queue=javaTechM.queue
