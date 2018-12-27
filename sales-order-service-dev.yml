@@ -17,10 +17,6 @@ eureka:
       enabled: true
     lease:
       duration: 5
- 
-spring:
-  application:
-    name: sales-order-service-dev    #service name
 
 #for Ribbon Load Balancing
 server:
