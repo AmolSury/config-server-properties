@@ -8,9 +8,9 @@ eureka:
 zuul:
   prefix: 
   routes:
-    customersApi:
+    customer-service:
       serviceId: CUSTOMER-SERVICE
-    itemsApi:
+    items-service:
       serviceId: ITEM-SERVICE
-    salesApi:
+    sales-service:
       serviceId: SALES-ORDER-SERVICE
