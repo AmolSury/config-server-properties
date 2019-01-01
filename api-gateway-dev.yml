@@ -13,4 +13,4 @@ zuul:
     itemsApi:
       serviceId: ITEM-SERVICE
     salesApi:
-      serviceId: SALESORDER-SERVICE
+      serviceId: SALES-ORDER-SERVICE
