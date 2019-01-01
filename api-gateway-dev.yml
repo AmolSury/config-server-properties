@@ -1,0 +1,16 @@
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#ui.serverUrl: http://localhost:4200/
+zuul:
+  prefix: 
+  routes:
+    customersApi:
+      serviceId: CUSTOMER-SERVICE
+    itemsApi:
+      serviceId: ITEM-SERVICE
+    salesApi:
+      serviceId: SALESORDER-SERVICE
