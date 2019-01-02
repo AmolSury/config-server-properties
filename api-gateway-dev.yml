@@ -9,8 +9,11 @@ zuul:
   prefix: 
   routes:
     customer-service:
+      path : /customer-service/**
       serviceId: CUSTOMER-SERVICE
     items-service:
+      path : /items-service/**
       serviceId: ITEM-SERVICE
     sales-order-service:
+      path : /sales-order-service/**
       serviceId: SALES-ORDER-SERVICE
