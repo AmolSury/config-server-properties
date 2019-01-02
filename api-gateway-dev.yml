@@ -12,5 +12,5 @@ zuul:
       serviceId: CUSTOMER-SERVICE
     items-service:
       serviceId: ITEM-SERVICE
-    sales-service:
+    sales-order-service:
       serviceId: SALES-ORDER-SERVICE
