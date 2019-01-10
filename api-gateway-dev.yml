@@ -13,7 +13,7 @@ zuul:
       serviceId: CUSTOMER-SERVICE
     items-service:
       path : /items-service/**
-      serviceId: ITEM-SERVICE
+      serviceId: ITEMS-SERVICE
     sales-order-service:
       path : /sales-order-service/**
       serviceId: SALES-ORDER-SERVICE
